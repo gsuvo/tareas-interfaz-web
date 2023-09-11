@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 6</title>
+    <!-- Agregar enlaces a los archivos de Bootstrap CSS y JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="icon" href="img/logotec.ico" type="image/x-icon">
+    <style>
+        /* Agrega el estilo para justificar el texto */
+        .container {
+            text-align: justify;
+        }
+    </style>
+</head>
+    <div class="container-fluid">
+        <div class="row">
+             <!-- Columna del menú -->
+             <div class="col-md-3 menu-column p-4">
+                <img src="img/logotecN.png" alt="Logo" class="logo-img mb-4">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="portada.html" style="color: black;">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tarea1.html" style="color: black;">T1: Síntesis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tarea2.html" style="color: black;">T2: Cuadro comparativo</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="tarea3.html" style="color: black;">T3: Presentación</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="tarea4.html" style="color: black;">T4: Glosario</a> 
+                    </li>
+                    <li class="nav-item">   
+                        <a class="nav-link" href="https://github.com/gsuvo/u1-ejerciciogit.git" style="color: black;">T5: Práctica</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="tarea6.html" style="color: black;">T6: Curso Git</a> 
+                    </li>
+                </ul>
+            </div>                        
+            
+              <!-- Columna de contenido -->
+              <div class="col-md-9 content-column" style="margin-left: 20%;">
+                <div class="banner">
+                    <h6 style="font-size: 12px;">INSTITUTO TECNOLÓGICO DE TEPIC</h6>
+                    <h1>INTERFACES WEB</h1>
+                    <h6 style="font-size: 12px;  color: rgb(255, 93, 147);">M.C. Israel Arjona Vizcaíno</h6>
+                    <h6 style="font-size: 12px; color: rgb(255, 93, 147);"">Agosto - Diciembre 2023</h6>
+                    <p class="lead" style="font-size: 12px;">Alumno: José Gustavo Aguilar Correa</p>
+                </div>
+                <!-- Aquí puedes agregar el contenido específico de cada página -->
+                <div class="container">
+                    <h1>Comandos Git y GitHub</h1>
+                    <table>
+                        <tr>
+                            <th>Comando y posibles parámetros</th>
+                            <th>Breve descripción</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="text-align:center; background-color: rgb(5, 4, 4);color: rgb(255, 255, 255);"><strong>configuración</strong></td>
+                        </tr>
+                        <tr>
+                            <td>git config −−global user.name “[nombre-apellido]”</td>
+                            <td>Establecer un nombre que sea identificable para cuando se revise el historial de versiones</td>
+                            <td>git config −−global user.name “Juan Pérez”</td>
+                        </tr>
+                        <tr>
+                            <td>git config −−global user.email “[email válido]”</td>
+                            <td>Establecer una dirección de correo electrónico que se asociará a cada commit del historial</td>
+                            <td>git config −−global user.email “juan.perez@example.com”</td>
+                        </tr>
+                        <tr>
+                            <td>git config −−global -e</td>
+                            <td>Fichero con la información de configuración de Git</td>
+                            <td>git config −−global -e</td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <td colspan="3" style="text-align:center; background-color: rgb(5, 4, 4);color: rgb(255, 255, 255);"><strong>Inicialización</strong></td>
+                        </tr>
+                        <tr>
+                            <td>git init</td>
+                            <td>Inicializar un directorio existente como repositorio Git</td>
+                            <td>git init</td>
+                        </tr>
+                        <tr>
+                            <td>git clone [url]</td>
+                            <td>Recuperar un repositorio completo desde una ubicación alojada a través de una URL</td>
+                            <td>git clone https://github.com/usuario/repositorio.git</td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="3" style="text-align:center; background-color: rgb(5, 4, 4);color: rgb(255, 255, 255);"><strong>Escenario</strong></td>
+                        </tr>
+                        <tr>
+                            <td>git status</td>
+                            <td>Mostrar los archivos modificados en el directorio de trabajo, preparados para su próximo commit</td>
+                            <td>git status</td>
+                        </tr>
+                        <tr>
+                            <td>git add [fichero]</td>
+                            <td>Añadir un archivo para el próximo commit (escenario)</td>
+                            <td>git add ejemplo.txt</td>
+                        </tr>
+                        <tr>
+                            <td>git add -u</td>
+                            <td>Actualiza el índice sólo donde ya tiene una entrada que coincide con <pathspec>.</td>
+                            <td>git add -u .</td>
+                        </tr>
+                        <tr>
+                            <td>git reset [fichero]</td>
+                            <td>Desenvolver un archivo conservando los cambios en el directorio de trabajo</td>
+                            <td>git reset ejemplo.txt</td>
+                        </tr>
+                        <tr>
+                            <td>git reset −−soft HEAD</td>
+                            <td>Desenvolver el último commit conservando los cambios en el directorio local</td>
+                            <td>git reset −−soft HEAD</td>
+                        </tr>
+                        <tr>
+                            <td>git diff</td>
+                            <td>Diferencia de lo que se cambia pero no se pone en escena</td>
+                            <td>git diff</td>
+                        </tr>
+                        <tr>
+                            <td>git diff −−staged</td>
+                            <td>Diferencia de lo que se ha puesto en escena pero aún no se ha hecho commit</td>
+                            <td>git diff −−staged</td>
+                        </tr>
+                        
+                        <tr>
+                        
+                        <td>git commit -m “[mensaje descriptivo]”</td>
+                        
+                        <td>Hacer un nuevo commit con su respecta descripción</td>
+                        
+                        <td>git commit -m "Añadido el archivo ejemplo.txt"</tr>
+                        
+                            <tr>
+                                <td colspan="3" style="text-align:center; background-color: rgb(5, 4, 4);color: rgb(255, 255, 255);"><strong>Ramas</strong></td>
+                            </tr>
+                            <tr>
+                                <td>git branch</td>
+                                <td>Listar las ramas y aparecerá un * al lado de la rama actualmente activa</td>
+                                <td>git branch</td>
+                            </tr>
+                            <tr>
+                                <td>git branch [nombre de la rama]</td>
+                                <td>Crear una nueva rama en el commit actual</td>
+                                <td>git branch nueva_rama</td>
+                            </tr>
+                            <tr>
+                                <td>git checkout -b [nombre de la rama]</td>
+                                <td>Creación y desplazamiento a la rama indicada</td>
+                                <td>git checkout -b nueva_rama</td>
+                            </tr>
+                            <tr>
+                                <td>git branch -d [nombre de la rama]</td>
+                                <td>Elimina la rama indicada</td>
+                                <td>git branch -d nueva_rama</td>
+                            </tr>
+                            <tr>
+                                <td>git checkout [nombre de la rama]</td>
+                                <td>Cambiar a otra rama y comprobarla en el directorio de trabajo</td>
+                                <td>git checkout otra_rama</td>
+                            </tr>
+                            <tr>
+                                <td>git checkout −− .</td>
+                                <td>Retomar el estado del último commit</td>
+                                <td>git checkout −− .</td>
+                            </tr>
+                            
+                            <tr>
+                            
+                            <td>git merge [rama]</td>
+                            
+                            <td>Fusionar el historial de la rama especificada en la actual</td>
+                            
+                            <td>git merge otra_rama"</tr>
+                            
+                            <tr>
+                            
+                            <td>git log</td>
+                            
+                            <td>Mostrar todos los commits en el historial de la rama actual</td>
+                            
+                            <td>git log"</tr>                            
+
+                                <td>git log</td>
+                                <td>Mostrar el historial de commits de la rama actualmente activa</td>
+                                <td>git log</td>
+                            
+                            <tr>
+                                <td>git log ramaB...ramaA</td>
+                                <td>Mostrar los commits de la ramaA que no están en la rama B</td>
+                                <td>git log ramaB...ramaA</td>
+                            </tr>
+                            <tr>
+                                <td>git log −−follow [file]</td>
+                                <td>Mostrar los commits que cambiaron el archivo, incluso a través de los renombramientos</td>
+                                <td>git log −−follow ejemplo.txt</td>
+                            </tr>
+                            
+                            <tr>
+                            
+                            <td>git diff ramaB...ramaA</td>
+                            
+                            <td>Mostrar la diferencia de lo que hay en la rama A que no está en la rama B</td>
+                            
+                            <td>git diff ramaB...ramaA</tr>
+                            
+                            <tr>
+                            
+                            <td>git show [SHA]</td>
+                            
+                            <td>Mostrar cualquier objeto en Git en formato legible para el ser humano</td>
+                            
+                            <td>git show abc123</tr>
+                            
+                                <tr>
+                                    <td colspan="3" style="text-align:center; background-color: rgb(5, 4, 4);color: rgb(255, 255, 255);"><strong>Seguimiento de los cambios</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>git rm [fichero]</td>
+                                    <td>Eliminar el archivo del proyecto y preparar la eliminación para el commit</td>
+                                    <td>git rm ejemplo.txt</td>
+                                </tr>
+                                <tr>
+                                    <td>git mv [ruta existente] [nueva ruta]</td>
+                                    <td>Renombrar un archivo o directorio o cambiar la ruta de un archivo existente y realizar el movimiento</td>
+                                    <td>git mv ruta_existente/ejemplo.txt nueva_ruta/ejemplo.txt</td>
+                                </tr>
+                                <tr>
+                                    <td>git log −−stat -M</td>
+                                    <td>Mostrar todos los registros de commit con indicación de las rutas que se han movido</td>
+                                    <td>git log −−stat -M</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="text-align:center; background-color: rgb(5, 4, 4);color: rgb(255, 255, 255);"><strong>Ignorando los patrones</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>logs/ <br> *.notes <br> pattern*/</td>
+                                    <td>Guarda un archivo con los patrones deseados como .gitignore</td>
+                                    <td>echo -e "logs/\n*.notes\npattern*/" > .gitignore</td>
+                                </tr>
+                                <tr>
+                                    <td>git config –global core.excludesfile [fichero]</td>
+                                    <td>Git ignora ese fichero para todos los repositorios</td>
+                                    <td>git config –global core.excludesfile .gitignore_global</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td colspan="3" style="text-align:center; background-color: rgb(5, 4, 4);color: rgb(255, 255, 255);"><strong>Compartir y Actualizar</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>git remote add [alias] [url]</td>
+                                    <td>Añadir una URL de git como alias</td>
+                                    <td>git remote add origin https://github.com/usuario/repositorio.git</td>
+                                </tr>
+                                <tr>
+                                    <td>git fetch [alias]</td>
+                                    <td>Obtener todas las ramas de ese Git remoto</td>
+                                    <td>git fetch origin</td>
+                                </tr>
+                                <tr>
+                                    <td>git merge [alias]/[rama]</td>
+                                    <td>Fusionar una rama remota en su rama actual para actualizarla</td>
+                                    <td>git merge origin/rama_remota</td>
+                                </tr>
+                                
+                                <tr>
+                                
+                                <td>git push [alias] [rama]</td>
+                                
+                                <td>Transmitir los commits de la rama local a la rama del repositorio remoto</td>
+                                
+                                <td>git push origin rama_local"</tr>
+                                
+                                <tr>
+                                
+                                <td>git pull</td>
+                                
+                                <td>Obtener y fusionar los commits de la remota a la rama local</td>
+                                
+                                <td>git pull"</tr>
+                                
+                                    <tr>
+                                        <td colspan="3" style="text-align:center; background-color: rgb(5, 4, 4);color: rgb(255, 255, 255);"><strong>Tags</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>git tag</td>
+                                        <td>Visualizar todos los tags</td>
+                                        <td>git tag</td>
+                                    </tr>
+                                    <tr>
+                                        <td>git tag -a [ID del tag] -m "[mensaje descriptivo]"</td>
+                                        <td>Crear un tag para el último commit realizado con un mensaje enlazado a este tag</td>
+                                        <td>git tag -a v1.0 -m "Primera versión estable"</td>
+                                    </tr>
+                                    <tr>
+                                        <td>git tag -a [ID del tag] [hash del commit] -m "[mensaje descriptivo]"</td>
+                                        <td>Crear un tag para un commit identificado con su hash</td>
+                                        <td>git tag -a v0.9 9fceb02 -m "Versión de prueba"</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                    
+                                    <td>git tag -d [ID del tag]</td>
+                                    
+                                    <td>Eliminar el tag específicado</td>
+                                    
+                                    <td>git tag -d v0.9"</tr>
+                                    
+                                    <tr>
+                                    
+                                    <td>git push −−tags</td>
+                                    
+                                    <td>Enviar todos los tags al repositorio remoto</td>
+                                    
+                                    <td>git push −−tags"</tr>
+                                    
+                                    <tr>
+                                        <td colspan="3" style="text-align:center; background-color: rgb(5, 4, 4);color: rgb(255, 255, 255);"><strong>Reescribir la Historia</strong></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                    
+                                    <td>git rebase [rama]</td>
+                                    
+                                    <td>Aplicar cualquier commit de la rama actual por delante de la especificada</td>
+                                    
+                                    <td>git rebase master"</tr>
+                                    
+                                    <tr>
+                                    
+                                    <td>git reset −−hard [commit]</td>
+                                    
+                                    <td>Despejar el escenario y reescribir el árbol de trabajo a partir del commit específicado</td>
+                                    
+                                    <td>git reset −−hard 9fceb02"</tr>
+                                    
+                                        <tr>
+                                            <td colspan="3" style="text-align:center; background-color: rgb(5, 4, 4);color: rgb(255, 255, 255);"><strong>Commits Temporales</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>git stash</td>
+                                            <td>Almacenamiento de los cambios realizados en la "pila de almacenamiento", para centrarse en otro campo y volver más adelante al punto anterior</td>
+                                            <td>git stash</td>
+                                        </tr>
+                                        <tr>
+                                            <td>git stash list</td>
+                                            <td>Listar el orden de pila de los cambios en los archivos almacenados</td>
+                                            <td>git stash list</td>
+                                        </tr>
+                                        <tr>
+                                            <td>git stash pop</td>
+                                            <td>Toma un cambio almacenado, lo elimina de la "pila de almacenamiento" y lo aplica al árbol de trabajo actual</td>
+                                            <td>git stash pop</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                        
+                                        <td>git stash drop</td>
+                                        
+                                        <td>Descartar los cambios de la parte superior de la "pila de almacenamiento"</td>
+                                        
+                                        <td>git stash drop</tr>
+                                        
+                                        <tr>
+                                        
+                                        <td>git stash clear</td>
+                                        
+                                        <td>Borrar todas las entradas del stash list</td>
+                                        
+                                        <td>git stash clear</tr>
+                                        
+                                        <tr>
+                                        
+                                        <td>git stash apply</td>
+                                        
+                                        <td>Restaurar el último registro del stash</td>
+                                        
+                                        <td>git stash apply</tr>
+                                        
+                                        <tr>
+                                        
+                                        <td>git stash apply [ID del stash]</td>
+                                        
+                                        <td>Restaurar el stash identificado con su ID (por ejemplo, ID: stash@{0})</td>
+                                        
+                                        <td>git stash apply stash@{0}</tr>
+                                        
+                                        <tr>
+                                        
+                                        <td>git stash save −−keep-index</td>
+                                        
+                                        <td>Guardar todos los archivos menos los archivos del stage</td>
+                                        
+                                        <td>git stash save −−keep-index</tr>
+                                        
+                                        <tr>
+                                        
+                                        <td>git stash save −−include-untracked</td>
+                                        
+                                        <td>Incluir todos los archivos, incluso a los que git no da seguimiento</td>
+                                        
+                                        <td>git stash save −−include-untracked</tr>
+                                        
+                                        <tr>
+                                        
+                                        <td>git stash list −−stat</td>
+                                        
+                                        <td>Aparece más información para cada uno de los stash de los registros</td>
+                                        
+                                        <td>git stash list −−stat</tr>
+                                        
+                                        <tr>
+                                        
+                                        <td>git stash branch [nombre de la rama] [ID-Stash]</td>
+                                        
+                                        <td>Creación de una rama a partir de un stash identificado con su ID</td>
+                                        
+                                        <td>git stash branch nueva_rama stash@{0}</tr>
+                                        
+                                        
+                                        <tr>
+                                        
+                                        <td>git stash show</td>
+                                        
+                                        <td>Información detallada del stash</td>
+                                        
+                                        <td>git stash show</tr>
+                                        
+                                        
+                                                                                                                        
+                    
+                    </table>
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
